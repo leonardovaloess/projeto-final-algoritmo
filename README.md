@@ -6,10 +6,12 @@
 
 # 2 - ir pra sua branch
 
-# 3 - fazer modificações na sua branch
+# 3 - faça merge da main na sua branch antes de tudo também
 
-# 4 - voltar pra main
+# 4 - fazer modificações na sua branch
 
-# 5 - dar merge da sua branch na main
+# 5 - voltar pra main
 
-# 6 - repetir o processo sempre
+# 6 - dar merge da sua branch na main
+
+# 7 - repetir o processo sempre
