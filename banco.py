@@ -41,3 +41,24 @@ with connection: #with irá abrir e fechar o banco de dados automaticamente
 #agora vc vai fazer o seguinte: irá dar merge
 
 #calma, n dei push na minha branch
+
+#pra te mostrar a mudançca
+
+#o push foi só na minha branch
+
+#olhe no log a diferença
+
+
+# pra resetar as mudanças 
+
+#nnn, antes do commit, foi pq fiz um bgl errado
+
+#eu buguei a porra do git calma
+
+
+#AQUI CARAI
+
+#ta faldno q vai dar conflito se eu salvar entendeu? isso previne a gente de cagar com tudo
+
+#esse (git merge nome_da_branch) serve pra poder juntar a minha branch na original
+
