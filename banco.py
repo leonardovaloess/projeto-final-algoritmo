@@ -62,3 +62,13 @@ with connection: #with irá abrir e fechar o banco de dados automaticamente
 
 #esse (git merge nome_da_branch) serve pra poder juntar a minha branch na original
 
+
+#calma calma, agora vou explicar o passo a passo, tira print blza?
+
+#PASSO A PASSO:
+# 1 - sempre entrar na main e dar git pull
+# 2 - ir pra sua branch
+# 3 - fazer modificações na sua branch
+# 4 - voltar pra main
+# 5 - dar merge da sua branch na main
+# 6 - repetir o processo sempre
