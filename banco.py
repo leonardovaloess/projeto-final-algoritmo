@@ -8,5 +8,15 @@ connection = lite.connect("dados.db")
 
 with connection: #with irá abrir e fechar o banco de dados automaticamente
     cur = connection.cursor()
-    cur.execute("CREATE TABLE produtos(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, preco )")
     
+    #criando a tabela do banco
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS produtos(
+            id INTEGER PRIMARY KEY AUTOINCREMENT, 
+            name VARCHAR(100), 
+            price FLOAT, 
+            description TEXT,
+            imageurl TEXT, 
+            stock INTEGER
+        )
+    """)   
