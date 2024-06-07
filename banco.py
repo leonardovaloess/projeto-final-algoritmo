@@ -29,4 +29,15 @@ with connection: #with irá abrir e fechar o banco de dados automaticamente
 
 #linux do caralho
 
-#presta atenção, vou ensinar a criar branch (git checkout -b nome_da_branch)
+#presta atenção, vou ensinar a criar branch (git checkout -b nome_da_branch)]
+
+#vou dar um exemplo de commit q vc vai fazer
+
+
+#to na minha branch (leo-branch)
+
+#esses textos q estou escrevendo após o commit só vai ficar na minha branch
+
+#agora vc vai fazer o seguinte: irá dar merge
+
+#calma, n dei push na minha branch
