@@ -20,4 +20,6 @@ texto_botão1.grid(column=0,row=2)
 #FORMATAÇÃO DO BOTÃO
 botao1.grid(column=0,row=1)
 
+#caio foda
+
 janela.mainloop()
