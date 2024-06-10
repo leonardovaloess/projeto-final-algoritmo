@@ -1,14 +1,23 @@
 import tkinter as tk
 from tkinter import *
 
+def transforma_texto():
+    texto = "leonardo viado"
+    texto_botão1["text"] = texto
+
 janela = tk.Tk()
-janela.title("Gestão de Estoque") #título da janela
-janela.geometry("800x500+550+200") #definindo as dimensões da janela e onde ela irá "nascer"
+janela.title("Gestão de Estoque")
 
-janela.resizable(False, False) #A janela não será redimensionada manualmente
-janela.iconbitmap("images/icon.ico") #definindo icone da janela
+texto_orientação = Label(janela, text="Clique em uma das opções")
+#FORMATAÇÃO DO TEXTO
+texto_orientação.grid(column=0,row=0)
 
-#definindo o botão
-btn = Button(janela, text="Executar")
-btn.pack()
+botao1 = Button(janela, text="Inserir um novo produto", command=transforma_texto) #command = "dar o comando do que o botão irá fazer"
+botao2 = Button(janela, text="Verificar lista de produtos")
+
+texto_botão1 = Label(janela, text='')
+texto_botão1.grid(column=0,row=2)
+#FORMATAÇÃO DO BOTÃO
+botao1.grid(column=0,row=1)
+
 janela.mainloop()
