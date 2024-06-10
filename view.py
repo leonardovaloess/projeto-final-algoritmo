@@ -19,5 +19,5 @@ texto_botão1 = Label(janela, text='')
 texto_botão1.grid(column=0,row=2)
 #FORMATAÇÃO DO BOTÃO
 botao1.grid(column=0,row=1)
-
+#deu certo o merge
 janela.mainloop()
