@@ -1,4 +1,4 @@
-import tkinter as tk
+'''import tkinter as tk
 import customtkinter
 from customtkinter import *
 from tkinter import *
@@ -34,3 +34,4 @@ botao_sair.place(x=210,y=180)
 #executa a interface
 janela_login.mainloop()
 
+'''
