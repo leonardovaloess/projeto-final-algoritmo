@@ -65,7 +65,7 @@ def read_text_file(filename):
 
 # Ler dados do arquivo de texto e preencher o Treeview
 
-filename = 'C:\\VS Code\\GitHub\\Projeto Final RA\\interface\\estoque.txt'
+filename = 'C:\\VS Code\\GitHub\\Projeto Final RA\\banco.py'
 
 data = read_text_file(filename)
 for row in data:
