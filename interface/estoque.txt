@@ -1,2 +1,7 @@
-16/04/2024, Iphone 15 Pro Max, R$ 7.500
-20/03/2024, Ipad Pro M2, R$ 12.690
+2, 12/06/2024,Macbook Air M1,R$ 5000
+4, 12/06/2024,Macbook Air M1,R$ 5000
+5, 12/06/2024,Macbook Air M1,R$ 5000
+6, 12/06/2024,Macbook Air M1,R$ 5000
+7, 12/06/2024,Macbook Air M1,R$ 5000
+8, 12/06/2024,Macbook Air M3,R$ 5000
+9, 12/06/2024,airpods,R$ 5000
