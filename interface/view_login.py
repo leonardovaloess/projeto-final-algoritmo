@@ -39,8 +39,4 @@ botao_sair.place(x=210,y=220)
 
 
 #executa a interface
-<<<<<<< HEAD
 janela_login.mainloop()
-=======
-janela_login.mainloop()
->>>>>>> main
