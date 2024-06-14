@@ -6,7 +6,7 @@ from view_adicionar_produto import adicionar_produto
 from view_deletar_produto import deletar_produto
 
 def gestor():
-    def atualizar_tabela():
+    def atualizar_tabela(tree):
         def read_text_file(filename):
             data = []
             with open(filename, 'r') as file:
@@ -33,34 +33,37 @@ def gestor():
     janela_principal.resizable(False, False)
 
 
-    # Criar um frame para a barra de pesquisa e botões
+    # Criar um frame para a barra de pesquisa e botão para pesquisar produto ficarem em cima
     top_frame = customtkinter.CTkFrame(janela_principal)
-    top_frame.pack(side=tk.TOP, fill=tk.X)
+    top_frame.pack(side=tk.TOP)
 
     procurar = customtkinter.CTkEntry(top_frame, placeholder_text="Procurar Produto", width=200, height=30)
-    procurar.place(x=5,y=10)
+    procurar.grid(columnspan=2,column=0,row=0,pady=10)
 
-    botao_pesquisar_produto = customtkinter.CTkButton(top_frame, text="Pesquisar Produto", command=barra_pesquisa)
-    botao_pesquisar_produto.place(x= 210, y = 10)
+    botao_pesquisar_produto = customtkinter.CTkButton(top_frame, text="Pesquisar Produto")
+    botao_pesquisar_produto.grid(column=3,row=0,padx=20)
 
-    botao_adicionar_produto = customtkinter.CTkButton(top_frame, text="Adicionar Produto", command=adicionar_produto)
-    botao_adicionar_produto.place(x=360, y=10)
+    # Criar um frame para os botões restantes ficarem à direita
+    right_frame = customtkinter.CTkFrame(janela_principal)
+    right_frame.pack(side=tk.RIGHT, fill=tk.Y)
 
-    botao_deletar_produto = customtkinter.CTkButton(top_frame, text="Deletar Produto", command=deletar_produto)
-    botao_deletar_produto.place(x=508, y=10)
+    botao_adicionar_produto = customtkinter.CTkButton(right_frame, text="Adicionar Produto", command=lambda:adicionar_produto(janela_principal))
+    botao_adicionar_produto.pack(padx=10,pady=10)
 
-    botao_atualizar_tabela = customtkinter.CTkButton(top_frame, text="Atualizar Tabela", command=atualizar_tabela)
-    botao_atualizar_tabela.place(x=655, y=10)
+    botao_deletar_produto = customtkinter.CTkButton(right_frame, text="Deletar Produto", command=deletar_produto)
+    botao_deletar_produto.pack(padx=10,pady=10)
 
-    botao_sair = customtkinter.CTkButton(top_frame, text="Sair", command=janela_principal.destroy)
-    botao_sair.pack(side=RIGHT,padx=10, pady=10)
+    botao_atualizar_tabela = customtkinter.CTkButton(right_frame, text="Atualizar Tabela", command=lambda:atualizar_tabela(tree))
+    botao_atualizar_tabela.pack(padx=10,pady=10)
+
+    botao_sair = customtkinter.CTkButton(right_frame, text="Sair", command=janela_principal.destroy)
+    botao_sair.pack(padx=10,pady=10)
 
 
 
     # Criar um frame para a tabela
     tabela = customtkinter.CTkFrame(janela_principal)
-    tabela.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
-    tabela.configure(height=400)
+    tabela.pack(side=tk.LEFT, fill=tk.Y, expand=True)
 
     # Criar uma tabela com scrollbars
     tree = ttk.Treeview(tabela, columns=("Coluna 1", "Coluna 2", "Coluna 3", "Coluna 4"), show="headings")

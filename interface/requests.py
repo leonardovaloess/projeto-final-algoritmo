@@ -6,7 +6,6 @@ caminho = os.path.join('interface', 'estoque.txt')
 #logica para pegar todos as linhas do arquivo txt e transformar em uma lista
 def readProducts():
     caminho = os.path.join('interface', 'estoque.txt')
-
     if not os.path.exists(caminho):
         return []
     with open(caminho, 'r', encoding='utf-8') as arquivo:
@@ -47,6 +46,7 @@ def createProduct(name, price):
 
 # Função para deletar um produto pelo ID
 def deleteProduct(id):
+    caminho = os.path.join('interface', 'estoque.txt')
     produtos = readProducts()
     with open(caminho, 'w', encoding='utf-8') as arquivo:
         for produto in produtos:
@@ -67,4 +67,6 @@ def editProduct(id, new_name, new_price):
 
 
 produtos = readProducts()
+id_inserido = 17
 print(produtos)
+deleteProduct(id_inserido)

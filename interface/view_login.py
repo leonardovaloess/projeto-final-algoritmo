@@ -11,7 +11,7 @@ def login():
         gestor()
     else:
         msg_erro = customtkinter.CTkLabel(janela_login, text="Credenciais Incorretas!")
-        msg_erro.pack(padx=10, pady=40)
+        msg_erro.pack(padx=10, pady=60)
         
 janela_login = customtkinter.CTk()
 janela_login.title("Gestor de Estoque")
