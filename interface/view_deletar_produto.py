@@ -18,7 +18,7 @@ def deletar_produto():
                 if id_inserido in numeros_do_estoque:
                     mostrar_erro("Produto deletado com sucesso!", sucesso=True)
                 else:
-                    mostrar_erro("Erro ao deletar produto: ID inválido")
+                    mostrar_erro("Erro ao deletar produto: ID inválido ou ID já deletado")
 
             except ValueError:
                 mostrar_erro("Erro ao deletar produto: ID inválido")
