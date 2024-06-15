@@ -36,7 +36,7 @@ def createProduct(name, price):
     
     id_unico = get_next_id(caminho)
     
-    product = f'{id_unico}, {data_formatada}, {name}, R$ {price}\n'
+    product = f'{id_unico},{data_formatada},{name},R$ {price}\n'
     
     with open(caminho, 'a', encoding='utf-8') as arquivo:
         arquivo.write(product)
@@ -62,11 +62,8 @@ def editProduct(id, new_name, new_price):
             parts = produto.split(',')
             if int(parts[0]) == id:
                 data_atual = datetime.now().strftime('%d/%m/%Y')
-                produto = f'{id}, {data_atual}, {new_name}, R$ {new_price}\n'
+                produto = f'{id},{data_atual},{new_name},{new_price}\n'
             arquivo.write(produto)
 
-
-produtos = readProducts()
-id_inserido = 17
-print(produtos)
-deleteProduct(id_inserido)
+nome = "uhul"
+editProduct(13,nome,10)

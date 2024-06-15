@@ -26,37 +26,37 @@ def adicionar_produto(janela_principal):
 
 
     # Configurações da janela principal
-    janela_novo_produto = ctk.CTk()
     ctk.set_appearance_mode("dark")
     ctk.set_default_color_theme("dark-blue")
     janela_novo_produto = ctk.CTkToplevel(janela_principal)
-    janela_novo_produto.title("Registrar Produto")
     janela_novo_produto.iconbitmap("interface/images/icon.ico")
-    janela_novo_produto.geometry("450x350+600+250")
+    janela_novo_produto.title("Registrar Produto")
+    janela_novo_produto.geometry("450x350+1400+250")
     janela_novo_produto.resizable(False, False)
     janela_novo_produto.grab_set()   
     janela_novo_produto.attributes("-topmost", True)  # Faz a janela secundária sobrepor a principal
     janela_novo_produto.protocol("WM_DELETE_WINDOW", lambda: None)  # Impede o fechamento da janela secundária
 
-    top_frame = ctk.CTkFrame(janela_novo_produto)
+    top_frame = ctk.CTkFrame(janela_novo_produto,fg_color="#1a1a1a")
     top_frame.pack(side=ctk.TOP, pady=50, fill=ctk.Y)
 
     registrar_produto_texto = ctk.CTkLabel(top_frame, text="Registrar produto")
     registrar_produto_texto.grid(row=0, column=0, columnspan=2, pady=10)
 
-    entrada_nome = ctk.CTkEntry(top_frame, placeholder_text="Nome do produto", width=200)
+    entrada_nome = ctk.CTkEntry(top_frame, placeholder_text="Nome do produto", width=300, height=35)
     entrada_nome.grid(row=1, column=0, columnspan=2, pady=20, padx=10)
 
-    entrada_preco = ctk.CTkEntry(top_frame, placeholder_text="Preço do produto", width=200)
+    entrada_preco = ctk.CTkEntry(top_frame, placeholder_text="Preço do produto", width=300, height=35)
     entrada_preco.grid(row=2, column=0, columnspan=2, padx=10)
 
-    msg_erro = ctk.CTkLabel(top_frame, text="")
-    msg_erro.grid(row=3, column=0, columnspan=2, pady=5)
 
     botao_adicionar_produto = ctk.CTkButton(top_frame, text="Adicionar produto", command=adicionar_produto)
     botao_adicionar_produto.grid(row=4, column=0, pady=10,padx=10)
 
     botao_sair = ctk.CTkButton(top_frame, text="Sair", command=janela_novo_produto.destroy)
     botao_sair.grid(row=4, column=1, pady=10, padx=10)
+
+    msg_erro = ctk.CTkLabel(top_frame, text="")
+    msg_erro.grid(row=3, column=0, columnspan=2, pady=5)
 
     janela_novo_produto.mainloop()
