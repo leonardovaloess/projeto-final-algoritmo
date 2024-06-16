@@ -1,2 +1,12 @@
-3,15/06/2024,Iphone 15,R$ 17000.0
-4,16/06/2024,Iphone 13,R$ 6700.0
+3,15/06/2024,Iphone 15, R$ 17000.0
+4,16/06/2024,Iphone 13, R$ 6700.0
+5,16/06/2024,Iphone 15 Pro 128 GB, R$ 9299.0
+6,16/06/2024,Iphone 15 Pro Max 128 GB, R$ 10999.0
+7,16/06/2024,Macbook Air M3 256 GB, R$ 12499.0
+8,16/06/2024,Macbook Air M3 512 GB, R$ 14499.0
+9,16/06/2024,Ipad Pro 256 GB, R$ 12299.0
+10,16/06/2024,Ipad Pro 512 GB, R$ 14699.0
+11,16/06/2024,AirPods 3 geracao, R$ 1899.0
+12,16/06/2024,AirPods 2 geracao, R$ 1399.0
+13,16/06/2024,AirPods Max, R$ 6590.0
+14,16/06/2024,AirPods Pro 2 geracao (USB-C), R$ 2599.0
