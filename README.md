@@ -1,17 +1,8 @@
-# projeto-final-algoritmo
+GESTOR DE ESTOQUE
 
-# PASSO A PASSO do git:
+Olá, este é um app de controle/gestão de estoque produzido em python e tkinter, com uma simulação de banco de dados
 
-# 1 - sempre entrar na main e dar git pull
+Para rodar esse projeto, siga o seguinte passo a passo:
 
-# 2 - ir pra sua branch
-
-# 3 - faça merge da main na sua branch antes de tudo também
-
-# 4 - fazer modificações na sua branch
-
-# 5 - voltar pra main
-
-# 6 - dar merge da sua branch na main
-
-# 7 - repetir o processo sempre
+1 - instale o tkinter e o customtkinter (pip install tkinter / pip install customtkinter)
+2 - acesse o arquivo view_login.py e em seguida rode ele (python view_login.py)
